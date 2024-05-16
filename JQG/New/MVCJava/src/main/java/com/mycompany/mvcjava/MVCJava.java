@@ -11,6 +11,8 @@ package com.mycompany.mvcjava;
 public class MVCJava {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Vista objetoVista=new Vista();
+        objetoVista.setVisible(true);
+        objetoVista.setLocationRelativeTo(null);
     }
 }

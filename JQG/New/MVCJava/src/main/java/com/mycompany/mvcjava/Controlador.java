@@ -9,37 +9,60 @@ package com.mycompany.mvcjava;
  * @author Usuario
  */
 public class Controlador {
-    //Creamos las variables privadas
+    //creamos nuestras variables privadas
     private Modelo modeloCalculadora;
-    private Modelo vistaCalculadora;
+    private Vista vistaCalculadora;
     
-    //Creamos los contructores
-    public Controlador(Modelo modeloCalculadora, Modelo vistaCalculadora) {
+    //creamos los constructores
+    public Controlador(Modelo modeloCalculadora, Vista vistaCalculadora) {
         this.modeloCalculadora = modeloCalculadora;
         this.vistaCalculadora = vistaCalculadora;
     }
     
-    public void realizarSuma(){
-        //Recuperamos los valores get numero1 y el 2
-        int num1 = vistaCalculadora.getNumero1();
-        int num2 = vistaCalculadora.getNumero2();
-        
-        //Invocamos el metodo sumar y se l oasignamos a la variable
-        int resultado = modeloCalculadora.sumar(num1, num2);
-        
-        vistaCalculadora.setResultado(resultado);
-        
-    }
-    //Metodo de la resta
-    public void realizarResta(){
-        //Recuperamos los valores get numero1 y el 2
-        int num1 = vistaCalculadora.getNumero1();
-        int num2 = vistaCalculadora.getNumero2();
-        
-        //Invocamos el metodo sumar y se l oasignamos a la variable
-        int resultado = modeloCalculadora.restar(num1, num2);
-        
-        vistaCalculadora.setResultado(resultado);
-        
-    
+  public void realizarSuma(){
+  //aqui recuperamos los valores del getnumero1 y getnumero2
+      int num1 = vistaCalculadora.getNumero1();
+      int num2 = vistaCalculadora.getNumero2();
+      
+      //invocamos el metodo sumar y se lo asignamos a la variable
+      int resultado =modeloCalculadora.sumar(num1,num2);
+      
+      
+      vistaCalculadora.SetResultado(resultado);
+  }
+     public void realizarResta(){
+  //aqui recuperamos los valores del getnumero1 y getnumero2
+      int num1 = vistaCalculadora.getNumero1();
+      int num2 = vistaCalculadora.getNumero2();
+      
+      //invocamos el metodo sumar y se lo asignamos a la variable
+      int resultado =modeloCalculadora.restar(num1,num2);
+      
+      
+      vistaCalculadora.SetResultado(resultado);
+  }
+     public void realizarMultiplicacion(){
+  //aqui recuperamos los valores del getnumero1 y getnumero2
+      int num1 = vistaCalculadora.getNumero1();
+      int num2 = vistaCalculadora.getNumero2();
+      
+      //invocamos el metodo sumar y se lo asignamos a la variable
+      int resultado =modeloCalculadora.multiplicar(num1,num2);
+      
+      
+      vistaCalculadora.SetResultado(resultado);
+  }
+     
+     public void realizarDivision(){
+  //aqui recuperamos los valores del getnumero1 y getnumero2
+      int num1 = vistaCalculadora.getNumero1();
+      int num2 = vistaCalculadora.getNumero2();
+      
+      //invocamos el metodo sumar y se lo asignamos a la variable
+      int resultado =modeloCalculadora.dividir(num1,num2);
+      
+      
+      vistaCalculadora.SetResultado(resultado);
+  }
+   
 }
