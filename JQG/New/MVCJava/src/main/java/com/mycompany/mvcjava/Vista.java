@@ -47,6 +47,7 @@ public class Vista extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("MVC Calculadora"));
 
         jLabel1.setText("Primer Número");
@@ -69,7 +70,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(204, 204, 255));
+        jButton3.setBackground(new java.awt.Color(255, 0, 51));
         jButton3.setText("Limpiar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +78,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setForeground(new java.awt.Color(255, 153, 153));
         jLabel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +87,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setForeground(new java.awt.Color(255, 204, 255));
+        jButton4.setBackground(new java.awt.Color(204, 204, 255));
         jButton4.setText("Multiplicar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +95,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setBackground(new java.awt.Color(204, 204, 255));
         jButton5.setText("DIvision");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -6,7 +6,7 @@ package com.mycompany.mvcjava;
 
 /**
  *
- * @author Usuario
+ * @author Usuario Johann David Quirino González 4IV9
  */
 public class Controlador {
     //creamos nuestras variables privadas
