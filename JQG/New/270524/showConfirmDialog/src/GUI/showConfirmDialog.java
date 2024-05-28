@@ -84,6 +84,7 @@ public class showConfirmDialog extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //JOptionPane.showConfirmDialog(this, "Ventana");
+        
         int respuesta = JOptionPane.showConfirmDialog(
                         null,
                         "¿Desea Guardar los cambios?",
@@ -91,7 +92,12 @@ public class showConfirmDialog extends javax.swing.JFrame {
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE
                 );
-        System.out.println(respuesta);
+        if(respuesta == 0){
+            System.out.println("Escogió la opcion Yes");
+        }
+        else{
+            System.out.println("Escogió la opcion No");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
