@@ -92,12 +92,14 @@ public class showConfirmDialog extends javax.swing.JFrame {
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE
                 );
+        //System.out.println(respuesta); Esta linea de comentó para que no se vea feo
         if(respuesta == 0){
             System.out.println("Escogió la opcion Yes");
         }
         else{
             System.out.println("Escogió la opcion No");
         }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
